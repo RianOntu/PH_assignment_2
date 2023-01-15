@@ -124,6 +124,11 @@ p{
     border-radius: 20px;
     margin-bottom: 20px;
 }
+.box-shadow{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
 .box-shadow h3,p{
     padding-left: 10px;
 }
