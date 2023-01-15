@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
     margin-left: 12%;
     margin-right: 12%;
+    padding-top: 1%;
 }
 .banner-menu{
     display: flex;
@@ -198,6 +199,18 @@ input,textarea{
     background-color: blueviolet;
     padding: 10px;
     color: white;
+}
+footer{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 80%;
+    justify-content: center;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 5px;
 }
 /* Media Queries */
 @media only screen and (max-width:576px) {
