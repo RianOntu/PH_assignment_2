@@ -175,19 +175,19 @@ button{
     transition: color 2s, background-color 2s;
 }
 
-.some_facts_description{
-    margin: 50px 0px 50px 20%;
-}
+
 /* sponsor area starts */
 .sponsor{
     text-align: center;
 }
 .sponsor_icons{
     margin-top: 30px;
-    display: flex;
-    gap: 80px;
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(4,1fr);
     margin-bottom: 100px;
     justify-content: center;
+    place-items: center;
 }
 /* contact area starts */
 .contact{
@@ -217,7 +217,26 @@ footer{
     padding: 15px;
     border-radius: 5px;
 }
+
 /* Media Queries */
+@media only screen and (min-width:577px) and (max-width:992px){
+.feature-section{
+    flex-direction: column-reverse;
+}
+.feature_image{
+    margin:auto;
+    padding: 0!important;
+}
+.feature_info{
+    margin-left: auto;
+    margin-top:61%;
+    
+}
+.sponsor_icons{
+    grid-template-columns: repeat(2,1fr);
+   place-items: center;
+}
+}
 @media only screen and (max-width:576px) {
     .banner-menu{
         flex-direction: column;
@@ -269,8 +288,8 @@ footer{
   
 }
 .sponsor_icons{
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
 }
 .sponsor_icons img{
     width: 150px;
